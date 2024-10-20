@@ -1,9 +1,12 @@
-import React from 'react';
+
+import StudentLogin from '../components/ui/Student/StudentLogin';
 
 function Login() {
     return (
         <div>
-            <p>this is the login page</p>
+            
+            <StudentLogin/>
+            <p>Don&apos;t have an account?<a href="">Create one!</a></p>
         </div>
     );
 }

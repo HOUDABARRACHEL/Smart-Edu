@@ -22,7 +22,7 @@ function Layout() {
                   <a href="/contact">Contact</a>
                 </li>
                 <li className="md:px-4 md:py-2 hover:text-indigo-400">
-                  <a href="/register">Register</a>
+                  <a href="/register">Create Your Account</a>
                 </li>
               </ul>
             </div>
@@ -49,7 +49,50 @@ function Layout() {
         </nav>
       </header>
       <Outlet />
-      <footer>Foot</footer>
+      <footer className="bg-gray-200 py-8 mt-10">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap justify-between">
+          {/* About Section */}
+          <div className="w-full md:w-1/3 mb-6">
+            <h3 className="text-indigo-500 text-lg font-semibold mb-2">About Smart-Edu</h3>
+            <p className="text-gray-600">
+              Smart-Edu is a platform dedicated to providing educational resources and tools to enhance learning experiences. Our mission is to make quality education accessible for everyone.
+            </p>
+          </div>
+
+          {/* Useful Links */}
+          <div className="w-full md:w-1/3 mb-6">
+            <h3 className="text-indigo-500 text-lg font-semibold mb-2">Quick Links</h3>
+            <ul className="text-gray-600">
+              <li className="mb-2">
+                <a href="/about" className="hover:text-indigo-400">About Us</a>
+              </li>
+              <li className="mb-2">
+                <a href="/contact" className="hover:text-indigo-400">Contact</a>
+              </li>
+              <li className="mb-2">
+                <a href="/privacy" className="hover:text-indigo-400">Privacy Policy</a>
+              </li>
+              <li className="mb-2">
+                <a href="/terms" className="hover:text-indigo-400">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="w-full md:w-1/3 mb-6">
+            <h3 className="text-indigo-500 text-lg font-semibold mb-2">Contact Information</h3>
+            <p className="text-gray-600">Email: info@smart-edu.com</p>
+            <p className="text-gray-600">Phone: +1 234 567 890</p>
+            <p className="text-gray-600">Address: 123 Learning Lane, Knowledge City</p>
+          </div>
+        </div>
+
+        
+        <div className="text-center text-gray-500 mt-8">
+          © {new Date().getFullYear()} Smart-Edu. All rights reserved.
+        </div>
+      </div>
+    </footer>
     </div>
   );
 }
